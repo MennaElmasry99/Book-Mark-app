@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book mark</title>
+    <link rel="icon" href="./images/bookmark.png">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+<div class="w-75 mx-auto py-5 text-center container">
+<h1 class="py-3 position-relative">Bookmarker</h1>
+<hr class="dash py-3">
+<h2 class="py-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+<div class="mb-3 position-relative py-4">
+    <label for="SiteName" class="form-label position-absolute fw-bold "><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+    <input type="text" class="form-control" id="SiteName" placeholder="Bookmark Name">
+  </div>
+<div class="mb-3 position-relative py-4">
+    <label for="siteUrl" class="form-label position-absolute fw-bolder"><i class="fa-solid fa-link pe-2"></i>Site Url</label>
+    <input type="text" class="form-control" id="siteUrl" placeholder="Websit url">
+    <p id="errorMessage" style="color: red; display: none;">Please enter a valid URL.</p>
+  </div>
+
+  <button type="submit" class="btn bg-danger text-white px-5 py-2 text-center" onclick="submitUrl()">submit</button>
+  <hr class="dash py-3">
+
+  <table class="table mt-4 text-center bg-light">
+    <thead>
+      <tr><th class="text-capitalize">index</th>
+      <th class="text-capitalize">Website Name</th>
+      <th class="text-capitalize">Visit</th>
+      <th class="text-capitalize">Delete</th>
+    </tr></thead>
+    <tbody id="tableContent"></tbody>
+  </table>
+</div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
